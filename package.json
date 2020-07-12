@@ -1,12 +1,16 @@
 {
+  "entry_script": "dev",
+  "entry_file": "src/pages/index.tsx",
   "dependencies": {
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
   },
   "devDependencies": {
-    "typescript": "latest",
-    "sass": "latest"
+    "@types/react": "^16.9.43",
+    "@types/node": "latest",
+    "sass": "latest",
+    "typescript": "latest"
   },
   "scripts": {
     "dev": "next"
