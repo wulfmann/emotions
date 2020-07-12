@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "sass": "latest"
+  },
+  "scripts": {
+    "dev": "next"
+  }
+}
