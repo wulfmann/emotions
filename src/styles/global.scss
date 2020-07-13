@@ -33,10 +33,16 @@ body {
   color: var(--foreground);
 }
 
+h2 {
+  padding: 1rem 0;
+  text-align: center;
+}
+
 .emotions {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: .5rem;
+  padding: .5rem;
 }
 
 .block {
@@ -44,4 +50,5 @@ body {
   border: 1px var(--accent-1) solid;
   font-size: 1.5rem;
   font-weight: bold;
+  text-align: center;
 }

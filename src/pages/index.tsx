@@ -15,6 +15,7 @@ function Home() {
 
   return (
     <Layout>
+      <h2>What are you feeling?</h2>
       <div className="emotions">
         {
           emotions.map((emotion, idx) => {
