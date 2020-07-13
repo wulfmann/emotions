@@ -1,7 +1,12 @@
+import { useState } from 'react';
+
 import Layout from '../layouts';
 import Block from '../components/Block';
+import Modal from '../components/Modal'
 
 function Home() {
+  const [emotion, setEmotion] = useState();
+
   const emotions = [
     'Anger',
     'Anticipation',
@@ -12,6 +17,14 @@ function Home() {
     'Sadness',
     'Disgust'
   ];
+  
+  const onClick = (e) => {
+    setEmotion(e)
+  }
+  
+  const onClose = () => {
+    setEmotion(undefined)
+  }
 
   return (
     <Layout>
@@ -20,11 +33,15 @@ function Home() {
         {
           emotions.map((emotion, idx) => {
             return (
-              <Block key={idx} text={emotion} />
+              <Block key={idx} text={emotion} onClick={onClick}/>
             )
           })
         }
       </div>
+      
+      <Modal show={emotion} onClose={onClose}>
+        <div>{emotion}</div>
+      </Modal>
     </Layout>
   );
 }

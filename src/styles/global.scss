@@ -34,21 +34,52 @@ body {
 }
 
 h2 {
-  padding: 1rem 0;
+  padding-top: 1rem;
   text-align: center;
+  margin: 0;
 }
 
 .emotions {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: .5rem;
-  padding: .5rem;
+  grid-gap: 1rem;
+  padding: 1rem;
 }
 
 .block {
-  padding: 1rem;
+  padding: 2rem 1rem;
   border: 1px var(--accent-1) solid;
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
+  border-radius: 1rem;
+}
+
+.modal {
+  &_content {
+    width: 80vw;
+    height: 80vh;
+    z-index: 999;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--background);
+    border: 1px var(--accent-1) solid;
+  }
+
+  &_overlay {
+    position: fixed;
+    z-index: 998;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }

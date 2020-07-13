@@ -1,6 +1,6 @@
-function Block({ text }) {
+function Block({ text, onClick }) {
   return (
-    <div className="block">
+    <div className="block" onClick={()=>onClick(text)}>
       {text}
     </div>
   )
